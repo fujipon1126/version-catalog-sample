@@ -58,6 +58,7 @@ dependencies {
     implementation "androidx.compose.ui:ui-tooling-preview:$compose_version"
     implementation 'androidx.compose.material3:material3:1.0.0-alpha11'
     implementation "androidx.webkit:webkit:$webkit_version"
+    implementation "androidx.datastore:datastore-preferences:$datastore_version"
 
     // Hilt
     implementation "com.google.dagger:hilt-android:$hilt_version"
