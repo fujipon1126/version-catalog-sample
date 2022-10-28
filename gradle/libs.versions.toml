@@ -1,0 +1,64 @@
+[versions]
+android-plugin = '7.3.1'
+kotlin = '1.7.0'
+androidx-core = '1.8.0'
+lifecycle-runtime = '2.3.1'
+lifecycle-viewmodel-compose = '2.5.1'
+activity-compose = '1.5.1'
+compose-version = '1.2.0'
+compose-material3 = '1.0.0-alpha11'
+webkit-version = '1.4.0'
+datastore-version = '1.0.0'
+firebase-bom-version = '30.5.0'
+hilt-version = '2.44'
+junit = '4.13.2'
+android-junit-version = '1.1.3'
+truth-version = '1.4.0'
+espresso-core = '3.4.0'
+robolectric-version = '4.8.1'
+mockito-kotlin-version = '3.2.0'
+mockito-inline-version = '3.11.2'
+
+[libraries]
+androidx-core = { module = 'androidx.core:core-ktx', version.ref = "androidx-core" }
+androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle-runtime" }
+androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle-viewmodel-compose" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity-compose" }
+androidx-compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose_version" }
+androidx-compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose_version" }
+androidx-compose-material3 = { module = "androidx.compose.material3:material3", version.ref = "compose-material3" }
+androidx-webkit = { module = "androidx.webkit:webkit", version.ref = "webkit_version" }
+androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore_version" }
+
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt_version" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt_version" }
+
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebase_bom_version" }
+firebase-analytics = { module = "com.google.firebase:firebase-analytics-ktx" }
+firebase-messaging = { module = "com.google.firebase:firebase-messaging-ktx" }
+firebase-remoteConfig = { module = "com.google.firebase:firebase-config-ktx" }
+firebase-crashlytics-ktx = { module = "com.google.firebase:firebase-crashlytics-ktx" }
+
+junit = { module = "junit:junit", version.ref = "junit" }
+test-truth = { module = "androidx.test.ext:truth", version.ref = "truth_version" }
+test-ext-junit-ktx = { module = "androidx.test.ext:junit-ktx", version.ref = "android_junit_version" }
+robolectric = { module = "org.robolectric:robolectric", version.ref = "robolectric_version" }
+mockito-kotlin = { module = "org.mockito.kotlin:mockito-kotlin", version.ref = "mockito_kotlin_version" }
+mockito-inline = { module = "org.mockito:mockito-inline", version.ref = "mockito_inline_version" }
+
+test-ext-junit = { module = "androidx.test.ext:junit", version.ref = "android_junit_version" }
+test-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso-core" }
+compose-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "compose-version" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose-version" }
+compose-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "compose-version" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "android-plugin" }
+android-library = { id = "com.android.library", version.ref = "android-plugin" }
+kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt_version" }
+
+[bundles]
+androidx-lifecycle = ["androidx-lifecycle-runtime-ktx", "androidx-lifecycle-viewmodel-compose"]
+compose = ["androidx-activity-compose", "androidx-compose-ui", "androidx-compose-ui-tooling-preview", "androidx-compose-material3", "androidx-lifecycle-viewmodel-compose"]
+test-compose = ["compose-ui-test-junit4", "compose-ui-tooling", "compose-ui-test-manifest"]
