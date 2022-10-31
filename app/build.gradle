@@ -3,6 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'com.google.dagger.hilt.android'
     id 'kotlin-kapt'
+    id 'version-catalog'
 }
 
 android {
@@ -50,41 +51,37 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.8.0'
-    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1'
-    implementation 'androidx.activity:activity-compose:1.5.1'
-    implementation "androidx.compose.ui:ui:$compose_version"
-    implementation "androidx.compose.ui:ui-tooling-preview:$compose_version"
-    implementation 'androidx.compose.material3:material3:1.0.0-alpha11'
-    implementation "androidx.webkit:webkit:$webkit_version"
-    implementation "androidx.datastore:datastore-preferences:$datastore_version"
+    implementation(libs.androidx.core)
+    implementation(libs.bundles.androidx.lifecycle)
+    implementation(libs.bundles.compose)
+    implementation(libs.androidx.webkit)
+    implementation(libs.androidx.datastore.preferences)
 
     // Hilt
-    implementation "com.google.dagger:hilt-android:$hilt_version"
-    kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.android.compiler)
 
     // Firebase Libraries
-    implementation platform("com.google.firebase:firebase-bom:$firebase_bom_version")
-    implementation 'com.google.firebase:firebase-analytics-ktx'
-    implementation 'com.google.firebase:firebase-messaging-ktx'
-    implementation 'com.google.firebase:firebase-crashlytics-ktx'
-    implementation 'com.google.firebase:firebase-config-ktx'
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.analytics)
+    implementation(libs.firebase.messaging)
+    implementation(libs.firebase.remoteConfig)
+    implementation(libs.firebase.crashlytics.ktx)
 
     // test
-    testImplementation 'junit:junit:4.13.2'
-    testImplementation "androidx.test.ext:truth:$truth_version"
-    testImplementation "androidx.test.ext:junit-ktx:$android_junit_version"
-    testImplementation "org.robolectric:robolectric:$robolectric_version"
-    testImplementation "org.mockito.kotlin:mockito-kotlin:$mockito_kotlin_version"
-    testImplementation "org.mockito:mockito-inline:$mockito_inline_version"
+    testImplementation(libs.junit)
+    testImplementation(libs.test.truth)
+    testImplementation(libs.test.ext.junit.ktx)
+    testImplementation(libs.robolectric)
+    testImplementation(libs.mockito.kotlin)
+    testImplementation(libs.mockito.inline)
 
     // AndroidTest
-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
-    androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
-    debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
-    debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_version"
+    androidTestImplementation(libs.test.ext.junit)
+    androidTestImplementation(libs.test.espresso.core)
+    androidTestImplementation(libs.compose.ui.test.junit4)
+    debugImplementation(libs.compose.ui.tooling)
+    debugImplementation(libs.compose.ui.test.manifest)
 }
 
 kapt {
