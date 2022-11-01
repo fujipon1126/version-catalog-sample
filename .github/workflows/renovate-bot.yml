@@ -2,7 +2,7 @@ name: renovate
 on:
     schedule:
       # とりあえず5分ごとに実行する設定
-      - cron: '*/5 * * * *'
+      - cron: '0/15 * * * *'
 jobs:
   renovate:
     runs-on: ubuntu-latest
