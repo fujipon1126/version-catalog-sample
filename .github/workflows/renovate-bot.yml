@@ -2,7 +2,9 @@ name: renovate
 on:
   schedule:
     # 60分ごとに実行する
-    - cron: '0/60 * * * *'
+    #- cron: '0/60 * * * *'
+    # 毎日18時に実行する
+    - cron: '0 9 * * *'
 jobs:
   renovate:
     runs-on: ubuntu-latest
