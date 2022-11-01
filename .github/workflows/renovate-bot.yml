@@ -1,7 +1,7 @@
 name: renovate
 on:
     schedule:
-      # 60分ごとに実行する設定
+      # 60分ごとに実行する
       - cron: '0/60 * * * *'
 jobs:
   renovate:
