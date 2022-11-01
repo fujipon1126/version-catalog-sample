@@ -7,6 +7,7 @@ module.exports = {
   repositories: [
     'fujipon1126/version-catalog-sample'
   ],
+  "labels": ["dependencies"],
   packageRules: [
     {
       matchUpdateTypes: [
@@ -20,6 +21,7 @@ module.exports = {
     }
   ],
   extends: [
-    "config:base"
+    "config:base",
+    ":disableDependencyDashboard"
   ]
 };
