@@ -15,8 +15,8 @@ module.exports = {
         'patch',
         'minor',
         'major',
-        'lockFileMaintenance',
-      ],      
+        'lockFileMaintenance'
+      ]
     }
   ],
   extends: [
