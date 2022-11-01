@@ -1,8 +1,8 @@
 name: renovate
 on:
     schedule:
-      # 10分ごとに実行する設定
-      - cron: '0/10 * * * *'
+      # 毎朝9時の実行
+      - cron: '0 0 * * *'
 jobs:
   renovate:
     runs-on: ubuntu-latest
