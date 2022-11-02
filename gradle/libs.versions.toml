@@ -33,11 +33,11 @@ androidx-datastore-preferences = { module = "androidx.datastore:datastore-prefer
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt_version" }
 hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt_version" }
 
-firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebase_bom_version" }
-firebase-analytics = { module = "com.google.firebase:firebase-analytics-ktx" }
-firebase-messaging = { module = "com.google.firebase:firebase-messaging-ktx" }
-firebase-remoteConfig = { module = "com.google.firebase:firebase-config-ktx" }
-firebase-crashlytics-ktx = { module = "com.google.firebase:firebase-crashlytics-ktx" }
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebase_bom_version" }
+firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics-ktx" }
+firebase-messaging = { group = "com.google.firebase", name = "firebase-messaging-ktx" }
+firebase-remoteConfig = { group = "com.google.firebase", name = "firebase-config-ktx" }
+firebase-crashlytics-ktx = { group = "com.google.firebase", name = "firebase-crashlytics-ktx" }
 
 junit = { module = "junit:junit", version.ref = "junit" }
 test-truth = { module = "androidx.test.ext:truth", version.ref = "truth_version" }
