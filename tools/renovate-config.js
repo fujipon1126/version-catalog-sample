@@ -22,6 +22,6 @@ module.exports = {
   ],
   extends: [
     "config:base",
-    ":disableDependencyDashboard"
+    ":dependencyDashboard"
   ]
 };
