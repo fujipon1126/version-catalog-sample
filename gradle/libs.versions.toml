@@ -59,6 +59,7 @@ kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt_version" }
 
 [bundles]
+firebase = ["firebase-analytics", "firebase-messaging", "firebase-remoteConfig", "firebase-crashlytics-ktx"]
 androidx-lifecycle = ["androidx-lifecycle-runtime-ktx", "androidx-lifecycle-viewmodel-compose"]
 compose = ["androidx-activity-compose", "androidx-compose-ui", "androidx-compose-ui-tooling-preview", "androidx-compose-material3", "androidx-lifecycle-viewmodel-compose"]
 test-compose = ["compose-ui-test-junit4", "compose-ui-tooling", "compose-ui-test-manifest"]

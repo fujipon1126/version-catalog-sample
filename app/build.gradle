@@ -63,10 +63,7 @@ dependencies {
 
     // Firebase Libraries
     implementation(platform(libs.firebase.bom))
-    implementation(libs.firebase.analytics)
-    implementation(libs.firebase.messaging)
-    implementation(libs.firebase.remoteConfig)
-    implementation(libs.firebase.crashlytics.ktx)
+    implementation(libs.bundles.firebase)
 
     // test
     testImplementation(libs.junit)
