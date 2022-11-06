@@ -18,6 +18,10 @@ module.exports = {
         'major',
         'lockFileMaintenance'
       ]
+    },
+    {
+      "matchSourceUrlPrefixes": ["https://github.com/firebase/"],
+      "groupName": "All firebase packages"
     }
   ],
   extends: [
