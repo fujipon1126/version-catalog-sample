@@ -5,8 +5,8 @@ on:
     #- cron: '0/60 * * * *'
     # 毎日18時に実行する
     #- cron: '0 9 * * *'
-    # 3時間ごとに実行する
-    - cron: '0 */3 * * *'
+    # 6時間ごとに実行する
+    - cron: '0 */6 * * *'
 jobs:
   renovate:
     runs-on: ubuntu-latest
