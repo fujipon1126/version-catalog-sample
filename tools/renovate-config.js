@@ -9,21 +9,18 @@ module.exports = {
   ],
   "labels": ["dependencies"],
   packageRules: [
-//    {
-//      matchUpdateTypes: [
-//        'pin',
-//        'digest',
-//        'patch',
-//        'minor',
-//        'major',
-//        'lockFileMaintenance'
-//      ]
-//    },
     {
-      "matchSourceUrlPrefixes": ["https://github.com/firebase/"],
-      "groupName": "All firebase packages"
+      matchUpdateTypes: [
+        'pin',
+        'digest',
+        'patch',
+        'minor',
+        'major',
+        'lockFileMaintenance'
+      ]
     }
   ],
+  timezone : "Asia/Tokyo",
   extends: [
     "config:base",
     ":dependencyDashboard"
