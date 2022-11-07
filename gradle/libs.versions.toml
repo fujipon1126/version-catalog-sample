@@ -24,14 +24,14 @@ androidx-core = { module = 'androidx.core:core-ktx', version.ref = "androidx-cor
 androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle-runtime" }
 androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle-viewmodel-compose" }
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity-compose" }
-androidx-compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose_version" }
-androidx-compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose_version" }
+androidx-compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose-version" }
+androidx-compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose-version" }
 androidx-compose-material3 = { module = "androidx.compose.material3:material3", version.ref = "compose-material3" }
-androidx-webkit = { module = "androidx.webkit:webkit", version.ref = "webkit_version" }
-androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore_version" }
+androidx-webkit = { module = "androidx.webkit:webkit", version.ref = "webkit-version" }
+androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore-version" }
 
-hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt_version" }
-hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt_version" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt-version" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt-version" }
 
 firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebase-bom-version" }
 firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics-ktx" }
@@ -40,13 +40,13 @@ firebase-remoteConfig = { group = "com.google.firebase", name = "firebase-config
 firebase-crashlytics-ktx = { group = "com.google.firebase", name = "firebase-crashlytics-ktx" }
 
 junit = { module = "junit:junit", version.ref = "junit" }
-test-truth = { module = "androidx.test.ext:truth", version.ref = "truth_version" }
-test-ext-junit-ktx = { module = "androidx.test.ext:junit-ktx", version.ref = "android_junit_version" }
-robolectric = { module = "org.robolectric:robolectric", version.ref = "robolectric_version" }
-mockito-kotlin = { module = "org.mockito.kotlin:mockito-kotlin", version.ref = "mockito_kotlin_version" }
-mockito-inline = { module = "org.mockito:mockito-inline", version.ref = "mockito_inline_version" }
+test-truth = { module = "androidx.test.ext:truth", version.ref = "truth-version" }
+test-ext-junit-ktx = { module = "androidx.test.ext:junit-ktx", version.ref = "android-junit-version" }
+robolectric = { module = "org.robolectric:robolectric", version.ref = "robolectric-version" }
+mockito-kotlin = { module = "org.mockito.kotlin:mockito-kotlin", version.ref = "mockito-kotlin-version" }
+mockito-inline = { module = "org.mockito:mockito-inline", version.ref = "mockito-inline-version" }
 
-test-ext-junit = { module = "androidx.test.ext:junit", version.ref = "android_junit_version" }
+test-ext-junit = { module = "androidx.test.ext:junit", version.ref = "android-junit-version" }
 test-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso-core" }
 compose-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "compose-version" }
 compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose-version" }
@@ -56,7 +56,7 @@ compose-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest", ve
 android-application = { id = "com.android.application", version.ref = "android-plugin" }
 android-library = { id = "com.android.library", version.ref = "android-plugin" }
 kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt_version" }
+hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt-version" }
 
 [bundles]
 firebase = ["firebase-analytics", "firebase-messaging", "firebase-remoteConfig", "firebase-crashlytics-ktx"]
