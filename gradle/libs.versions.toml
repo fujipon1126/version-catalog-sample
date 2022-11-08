@@ -3,6 +3,7 @@ android-plugin = '7.3.1'
 kotlin = '1.7.0'
 androidx-core = '1.8.0'
 appcompat-version = '1.5.0'
+constraintlayout-version = '2.1.0'
 lifecycle-runtime = '2.3.1'
 lifecycle-viewmodel-compose = '2.5.1'
 activity-compose = '1.5.1'
@@ -22,7 +23,8 @@ mockito-inline-version = '3.11.2'
 
 [libraries]
 androidx-core = { module = 'androidx.core:core-ktx', version.ref = "androidx-core" }
-androidx-appcompat = { module = 'androidx.appcompat:appcompat', version.ref = "appcompat_version" }
+androidx-appcompat = { module = 'androidx.appcompat:appcompat', version.ref = "appcompat-version" }
+androidx-constraintlayout = { module = 'androidx.constraintlayout:constraintlayout', version.ref = "constraintlayout-version" }
 androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle-runtime" }
 androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle-viewmodel-compose" }
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity-compose" }
