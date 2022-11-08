@@ -20,7 +20,6 @@ module.exports = {
       ]
     }
   ],
-  timezone : "Asia/Tokyo",
   extends: [
     "config:base",
     ":dependencyDashboard"
