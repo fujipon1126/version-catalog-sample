@@ -11,7 +11,7 @@ module.exports = {
   packageRules: [
     {
       // major,minor以外のバージョンアップは無効
-      matchUpdateTypes: [ 'patch', 'pin', 'pinDigest', 'digest', 'lockFileMaintenance', 'rollback', 'bump'],
+      matchUpdateTypes: [ 'pin', 'pinDigest', 'digest', 'lockFileMaintenance', 'rollback', 'bump'],
       enabled: false
     }
   ],
