@@ -20,6 +20,7 @@ espresso-core = '3.4.0'
 robolectric-version = '4.8.1'
 mockito-kotlin-version = '3.2.0'
 mockito-inline-version = '3.11.2'
+oss-licenses-plugin = '0.10.2'
 
 [libraries]
 androidx-core = { module = 'androidx.core:core-ktx', version.ref = "androidx-core" }
@@ -61,6 +62,7 @@ android-application = { id = "com.android.application", version.ref = "android-p
 android-library = { id = "com.android.library", version.ref = "android-plugin" }
 kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt-version" }
+oss-licenses-plugin = { id = "com.google.android.gms.oss-licenses-plugin", version.ref = "oss-licenses-plugin" }
 
 [bundles]
 firebase = ["firebase-analytics", "firebase-messaging", "firebase-remoteConfig", "firebase-crashlytics-ktx"]
