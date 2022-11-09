@@ -10,8 +10,8 @@ module.exports = {
   "labels": ["dependencies"],
   packageRules: [
     {
-      // major,minor以外のバージョンアップは無効
-      matchUpdateTypes: [ 'patch', 'pin', 'pinDigest', 'digest', 'lockFileMaintenance', 'rollback', 'bump'],
+      // major,minor,patch以外のバージョンアップは無効
+      matchUpdateTypes: [ 'pin', 'pinDigest', 'digest', 'lockFileMaintenance', 'rollback', 'bump'],
       enabled: false
     }
   ],
