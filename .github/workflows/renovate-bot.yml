@@ -8,7 +8,7 @@ on:
     # 3時間ごとに実行する
     #- cron: '0 */3 * * *'
     # 毎日AM2時に実行する
-    # - cron: '0 17 * * *'
+    - cron: '0 17 * * *'
 jobs:
   renovate:
     runs-on: ubuntu-latest
