@@ -65,6 +65,8 @@ dependencies {
     implementation(platform(libs.firebase.bom))
     implementation(libs.bundles.firebase)
 
+    implementation(libs.play.services.oss.licenses)
+
     // test
     testImplementation(libs.junit)
     testImplementation(libs.test.truth)

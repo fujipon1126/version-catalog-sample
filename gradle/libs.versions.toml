@@ -58,13 +58,13 @@ test-espresso-core = { module = "androidx.test.espresso:espresso-core", version.
 compose-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "compose-version" }
 compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose-version" }
 compose-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "compose-version" }
+oss-licenses-plugin = { module = "com.google.android.gms:oss-licenses-plugin", version.ref = "oss-licenses-plugin" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "android-plugin" }
 android-library = { id = "com.android.library", version.ref = "android-plugin" }
 kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt-version" }
-oss-licenses-plugin = { id = "com.google.android.gms.oss-licenses-plugin", version.ref = "oss-licenses-plugin" }
 
 [bundles]
 firebase = ["firebase-analytics", "firebase-messaging", "firebase-remoteConfig", "firebase-crashlytics-ktx"]
