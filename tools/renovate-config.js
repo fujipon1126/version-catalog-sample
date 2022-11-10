@@ -15,8 +15,6 @@ module.exports = {
       enabled: false
     }
   ],
-  extends: [
-    "config:base",
-    ":prHourlyLimit0" // PR を 1 時間あたり最大 x 件作成するようレート制限する。
-  ]
+  extends: [ "config:base" ],
+  ignorePresets: [":prHourlyLimit2"]
 };
