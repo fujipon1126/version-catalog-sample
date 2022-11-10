@@ -1,6 +1,7 @@
 [versions]
 android-plugin = '7.3.1'
 kotlin = '1.7.0'
+kotlinx-coroutines = '1.6.0'
 androidx-core = '1.8.0'
 appcompat-version = '1.5.0'
 constraintlayout-version = '2.1.0'
@@ -36,6 +37,10 @@ androidx-compose-material3 = { module = "androidx.compose.material3:material3", 
 androidx-webkit = { module = "androidx.webkit:webkit", version.ref = "webkit-version" }
 androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore-version" }
 play_services_oss_licenses = { module = "com.google.android.gms:play-services-oss-licenses", version.ref = "play_services_oss_licenses_version" }
+
+# Kotlin Libraries
+kotlin = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk7", version.ref = "kotlin" }
+kotlinx-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinx-coroutines" }
 
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt-version" }
 hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt-version" }
