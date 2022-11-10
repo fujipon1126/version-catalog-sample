@@ -17,6 +17,6 @@ module.exports = {
   ],
   extends: [
     "config:base",
-    ":dependencyDashboard"
+    ":prHourlyLimit0" // PR を 1 時間あたり最大 x 件作成するようレート制限する。
   ]
 };
