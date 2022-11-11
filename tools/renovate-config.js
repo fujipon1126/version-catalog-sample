@@ -23,5 +23,9 @@ module.exports = {
   "prConcurrentLimit": 100,
   prHourlyLimit2: false,
   prConcurrentLimit10: false,
-  extends: [ "config:base" ]
+  extends: [
+    "config:base",
+     ":prHourlyLimitNone",
+     ":prConcurrentLimitNone"
+  ]
 };
