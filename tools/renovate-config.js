@@ -15,6 +15,8 @@ module.exports = {
       enabled: false
     }
   ],
+  "prHourlyLimit": 0,
+  "prConcurrentLimit": 100,
   prHourlyLimit2: false,
   prConcurrentLimit10: false,
   extends: [ "config:base" ]
