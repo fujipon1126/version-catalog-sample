@@ -15,17 +15,9 @@ module.exports = {
       enabled: false
     }
   ],
-  "prHourlyLimit2": false,
-  "prConcurrentLimit10": false,
-  prHourlyLimit: 0,
-  prConcurrentLimit: 100,
-  "prHourlyLimit": 0,
-  "prConcurrentLimit": 100,
-  prHourlyLimit2: false,
-  prConcurrentLimit10: false,
   extends: [
     "config:base",
-     ":prHourlyLimitNone",
-     ":prConcurrentLimitNone"
+    ":prHourlyLimitNone",
+    ":prConcurrentLimitNone"
   ]
 };
