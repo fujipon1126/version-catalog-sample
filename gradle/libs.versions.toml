@@ -21,7 +21,7 @@ espresso-core = '3.4.0'
 robolectric-version = '4.8.1'
 mockito-kotlin-version = '3.2.0'
 mockito-inline-version = '3.11.2'
-oss-licenses-plugin = '0.10.2'
+oss-licenses-plugin = '0.10.5'
 play_services_oss_licenses_version = '17.0.0'
 
 [libraries]
