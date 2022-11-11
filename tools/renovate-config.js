@@ -1,6 +1,6 @@
 module.exports = {
   branchPrefix: 'renovate/',
-  dryRun: false,
+  dryRun: null,
   username: 'renovate-release',
   gitAuthor: 'Renovate Bot <bot@renovateapp.com>',
   platform: 'github',
@@ -15,6 +15,8 @@ module.exports = {
       enabled: false
     }
   ],
+  "prHourlyLimit2": false,
+  "prConcurrentLimit10": false,
   "prHourlyLimit": 0,
   "prConcurrentLimit": 100,
   prHourlyLimit2: false,
