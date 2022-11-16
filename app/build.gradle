@@ -54,11 +54,16 @@ dependencies {
     implementation(libs.bundles.androidx.lifecycle)
     implementation(libs.bundles.compose)
     implementation(libs.androidx.webkit)
+    implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.datastore.preferences)
 
     // Hilt
     implementation(libs.hilt.android)
     kapt(libs.hilt.android.compiler)
+
+    // compose
+    implementation(platform(libs.androidx.compose.bom))
+    implementation(libs.bundles.compose)
 
     // Firebase Libraries
     implementation(platform(libs.firebase.bom))

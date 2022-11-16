@@ -8,8 +8,7 @@ constraintlayout-version = '2.1.0'
 lifecycle-runtime = '2.3.1'
 lifecycle-viewmodel-compose = '2.5.1'
 activity-compose = '1.5.1'
-compose-version = '1.2.0'
-compose-material3 = '1.0.0-alpha11'
+compose-bom-version = '2022.10.00'
 webkit-version = '1.4.0'
 datastore-version = '1.0.0'
 firebase-bom-version = '30.5.0'
@@ -31,12 +30,18 @@ androidx-constraintlayout = { module = 'androidx.constraintlayout:constraintlayo
 androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle-runtime" }
 androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle-viewmodel-compose" }
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity-compose" }
-androidx-compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose-version" }
-androidx-compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose-version" }
-androidx-compose-material3 = { module = "androidx.compose.material3:material3", version.ref = "compose-material3" }
 androidx-webkit = { module = "androidx.webkit:webkit", version.ref = "webkit-version" }
 androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore-version" }
 play_services_oss_licenses = { module = "com.google.android.gms:play-services-oss-licenses", version.ref = "play_services_oss_licenses_version" }
+
+# compose
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose-bom-version" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 
 # Kotlin Libraries
 kotlin = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk7", version.ref = "kotlin" }
@@ -60,9 +65,6 @@ mockito-inline = { module = "org.mockito:mockito-inline", version.ref = "mockito
 
 test-ext-junit = { module = "androidx.test.ext:junit", version.ref = "android-junit-version" }
 test-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso-core" }
-compose-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "compose-version" }
-compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose-version" }
-compose-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "compose-version" }
 
 oss-licenses-plugin = { module = "com.google.android.gms:oss-licenses-plugin", version.ref = "oss-licenses-plugin" }
 
@@ -76,5 +78,5 @@ hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt-vers
 [bundles]
 firebase = ["firebase-analytics", "firebase-messaging", "firebase-remoteConfig", "firebase-crashlytics-ktx"]
 androidx-lifecycle = ["androidx-lifecycle-runtime-ktx", "androidx-lifecycle-viewmodel-compose"]
-compose = ["androidx-activity-compose", "androidx-compose-ui", "androidx-compose-ui-tooling-preview", "androidx-compose-material3", "androidx-lifecycle-viewmodel-compose"]
+compose = ["androidx-compose-ui", "androidx-compose-ui-tooling-preview", "androidx-compose-material3"]
 test-compose = ["compose-ui-test-junit4", "compose-ui-tooling", "compose-ui-test-manifest"]
