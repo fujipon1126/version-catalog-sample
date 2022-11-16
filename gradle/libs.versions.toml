@@ -19,7 +19,7 @@ truth-version = '1.4.0'
 espresso-core = '3.4.0'
 robolectric-version = '4.8.1'
 mockito-kotlin-version = '3.2.0'
-mockito-inline-version = '3.11.2'
+mockito-inline-version = '3.12.4'
 oss-licenses-plugin = '0.10.2'
 play_services_oss_licenses_version = '17.0.0'
 
