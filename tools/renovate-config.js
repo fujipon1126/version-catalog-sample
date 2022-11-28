@@ -7,7 +7,7 @@ module.exports = {
   repositories: [
     'fujipon1126/version-catalog-sample'
   ],
-  "labels": ["dependencies"],
+  labels: ["dependencies"],
   packageRules: [
     {
       // major,minor,patch以外のバージョンアップは無効
