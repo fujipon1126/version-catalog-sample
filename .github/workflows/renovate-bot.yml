@@ -2,13 +2,13 @@ name: renovate
 on:
   schedule:
     # 30分ごとに実行する
-    - cron: '0/10 * * * *'
+    #- cron: '0/10 * * * *'
     # 毎日18時に実行する
     #- cron: '0 9 * * *'
     # 3時間ごとに実行する
     #- cron: '0 */3 * * *'
     # 毎日AM2時に実行する
-    #- cron: '0 17 * * *'
+    - cron: '0 17 * * *'
 jobs:
   renovate:
     runs-on: ubuntu-latest
