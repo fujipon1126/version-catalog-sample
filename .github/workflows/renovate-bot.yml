@@ -20,3 +20,4 @@ jobs:
         with:
           configurationFile: tools/renovate-config.js
           token: ${{ secrets.RENOVATE_TOKEN }}
+          ref: add_library
