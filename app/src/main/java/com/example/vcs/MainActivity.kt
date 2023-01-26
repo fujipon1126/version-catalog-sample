@@ -26,11 +26,6 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // 時間のみ
-        val current = LocalDateTime.now()
-        val formatter = DateTimeFormatter.ISO_TIME
-        val formatted = current.format(formatter)
-
         setContent {
             VersioncatalogsampleTheme {
                 // A surface container using the 'background' color from the theme
@@ -40,7 +35,12 @@ class MainActivity : ComponentActivity() {
                 ) {
                     Main(
                         onAddClick = {
-                            val shortcut = ShortcutInfoCompat.Builder(applicationContext, "id1")
+                            // 時間のみ
+                            val current = LocalDateTime.now()
+                            val formatter = DateTimeFormatter.ISO_TIME
+                            val formatted = current.format(formatter)
+
+                            val shortcut = ShortcutInfoCompat.Builder(applicationContext, formatted)
                                 .setShortLabel(formatted)
                                 .setIcon(IconCompat.createWithResource(applicationContext, R.drawable.ic_launcher_foreground))
                                 .setIntent(Intent.makeMainActivity(ComponentName(applicationContext, "com.example.vcs.MainActivity")))
