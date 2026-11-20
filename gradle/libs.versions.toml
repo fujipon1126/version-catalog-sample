@@ -21,7 +21,7 @@ robolectric-version = '4.8.1'
 mockito-kotlin-version = '3.2.0'
 mockito-inline-version = '3.11.2'
 oss-licenses-plugin = '0.10.2'
-play_services_oss_licenses_version = '17.0.0'
+play_services_oss_licenses_version = '17.5.3'
 
 [libraries]
 androidx-core = { module = 'androidx.core:core-ktx', version.ref = "androidx-core" }
